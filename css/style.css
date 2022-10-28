@@ -22,10 +22,9 @@ h1 {
 
 nav {
   display: flex;
-  justify-content:center;
-
+  justify-content: center;
 }
-ul{
+ul {
   display: flex;
 }
 li {
@@ -35,11 +34,12 @@ li {
 a {
   color: white;
   text-decoration: none;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
-a:hover{
-text-decoration:underline;
-background-color: rgb(160, 122, 28);}
+a:hover {
+  text-decoration: underline;
+  background-color: rgb(160, 122, 28);
+}
 .container {
   display: flex;
   flex-direction: row-reverse;
@@ -48,6 +48,9 @@ background-color: rgb(160, 122, 28);}
 
 p {
   color: goldenrod;
+  margin: auto;
+
+  padding: 10px;
 }
 img {
   width: 200px;
