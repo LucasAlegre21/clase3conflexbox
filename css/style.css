@@ -2,6 +2,7 @@ body {
   background-image: url(../img/fondoTextura.png);
   font-family: "Old Standard TT", serif;
 }
+
 header img {
   width: 50px;
   height: 50px;
@@ -15,30 +16,48 @@ header {
   align-items: center;
 }
 
+.ordenDePagina {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+aside {
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+aside a {
+  color: white;
+}
+
+/* aside a {
+  color: white;
+} */
+
 h1 {
   color: goldenrod;
   margin: auto;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
 ul {
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
+
 li {
-  display: inline;
+  list-style: none;
   padding: 5px;
 }
 a {
-  color: white;
+  color: goldenrod;
   text-decoration: none;
-  transition: background-color 0.5s;
+  transition: background-color 1s;
 }
 a:hover {
-  text-decoration: underline;
-  background-color: rgb(160, 122, 28);
+  color: black;
+  background-color: rgb(179, 135, 25);
 }
 .container {
   display: flex;
@@ -56,15 +75,34 @@ img {
   width: 200px;
 }
 
+.izq:hover img {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+.der:hover img {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+
 .izq,
 .der {
   display: flex;
 }
+h6 {
+  color: white;
+}
+
+/* cajas con imagen de discos y link a youtube */
 
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
+
 footer img {
   width: 50px;
   height: 50px;
@@ -76,8 +114,14 @@ footer img {
     align-items: center;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 730px) {
   .container {
     flex-direction: column-reverse;
+  }
+  .ordenDePagina {
+    flex-direction: column-reverse;
+  }
+  aside {
+    padding-top: 23px;
   }
 }
